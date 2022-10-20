@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;1,200&display=swap');
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+main {
+    max-width: 1440px;
+    margin: 0% auto
+}
+header {
+    background: linear-gradient(45deg, #542d74 33%, #0D61BC 66%, #8AA9D6);
+    background-size: 400%;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    animation: color-change 10s ease-in-out infinite;
+}
+.menu {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-logo {
+    display: inline-block;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+.menu-main {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-align: center;
+}
+.menu-main li {
+    display: inline-block;
+}
+.menu-main li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+    color: white;
+}
+/* .menu-main a, .menu-main a:visited {color: #9d999d;} */
+.menu-main a:hover{
+    color: #feb386;
+}
+.menu-main a:before, .menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .5s;
+}
+.menu-main a:hover:before {left: 0;}
+.menu-main a:hover:after {right: 0;}   
+  
+.submitBlock {
+    padding-top: 10vh;
+    width: 100%;
+    height: 80vh;
+    background:rgba(0, 0, 0, 0.55) url('https://img4.teletype.in/files/33/7f/337f5bc2-e0a1-4226-8200-4d76e3fb73cc.png');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+    color: #3983f9;
+}
+.submitButton {
+    position: relative;
+    top: 20%;
+    border-width: 2px;
+    border-color: whitesmoke;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #542d74 33%, #0D61BC 66%, #8AA9D6);
+    background-size: 400%;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    outline: 3px solid transparent;
+    animation: color-change 10s ease-in-out infinite;
+    transition: .5s;
+    cursor: pointer;
+}
+.submitButton:after {
+    content: ">"; 
+    font-size: 17px;
+}
+.submitButton::before {
+    content: "<";
+    font-size: 17px;
+}
+.submitButton:hover {
+    background: transparent;
+    border-color: #4676d7;
+    outline: 3px solid #ffffff;
+    outline-offset: 5px;
+    -webkit-transform: scale(1.1);
+    -ms-ransform: scale(1.1);
+    transform: scale(1.1);
+}
+@keyframes color-change {
+    0% {
+        background-position: 0px 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0px 50%;
+    }
+}
+.infoBlock {
+    margin: 0%;
+    background-color:lightcoral;
+    width: 100%;
+    /* min-height: 50vh; */
+}
+.infoText {
+    padding: 2% 8% 2% 8%;
+}
+.infoBox {
+    padding: 0% 0% 2% 0%;
+}
+.practiceBlock {
+    margin: 0%;
+    background-color:coral;
+    width: 100%;
+    /* min-height: 50vh; */
+    text-align: right;
+}
+.practiceText {
+    padding: 2% 8% 2% 8%;
+}
+.practiceBox {
+    padding: 2% 0% 2% 0%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    display: flex;    
+}
+.cardPractice {
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    float: right;
+    position: relative;
+}
+.jobsBlock {
+    background-color: aquamarine;
+    width: 100%;
+    /* min-height: 50vh; */
+}
+.jobsText {
+    padding: 2% 8% 2% 8%;
+}
+div section ul {
+    padding: 2% 0% 2% 0%;
+    columns: 2;
+    list-style: none;
+    text-align: center;
+}
+div section li {
+    display: block
+}
+div section li::after, div section li::before {
+    content: "</>";
+    font-size: 13px;
+}
+.reviewsBlock {
+    margin: 0%;
+    background-color:thistle;
+    width: 100%;
+    /* min-height: 50vh; */
+    text-align: right;
+}
+.reviewsText {
+    padding: 2% 8% 2% 8%;
+}
+.cardRev-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.cardRev {
+    min-width: 200px;
+    max-width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+.cardRev-img {
+    max-width: inherit;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.cardRev-body {
+    text-align: center;
+}
+footer {
+    background-color:darkgray;
+}
+@media screen and (max-width: 992px) {
+    .submitBlock {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 767px) {
+    .menu-main a {
+        margin: 0px 14px 0px 10px;
+        font-size: 14px;
+    }
+    .submitBlock {
+        font-size: 1em;
+    }
+    div section ul {
+        columns: 1;
+    }
+    /* .menu-main a {
+        margin: 0%  15% 0%  15%;
+        font-size: 13px;
+    } */
+    .cardRev-container {
+        flex-wrap: wrap;
+    }
+    .cardRev {
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 424px) {
+    .menu-main a {
+        margin: 0px 10px 0px 6px;
+        font-size: 12px;
+    }
+}
