@@ -12,7 +12,7 @@ main {
     margin: 0% auto
 }
 header {
-    background: linear-gradient(45deg, #542d74 33%, #0D61BC 66%, #8AA9D6);
+    background: linear-gradient(45deg, #864cb5 33%, #0D61BC 66%, #8AA9D6);
     background-size: 400%;
     width: 100%;
     height: 10vh;
@@ -20,10 +20,16 @@ header {
     text-align: center;
     animation: color-change 10s ease-in-out infinite;
 }
-.menu {
+.menu-contain {
     height: inherit;
     display: flex;
     justify-content: center;
+}
+.menu {
+    max-width: 1440px;
+    width: 100%;
+    height: inherit;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -91,6 +97,8 @@ header {
     font-size: 1.5em;
     font-family: 'Ubuntu', sans-serif;
     color: #3983f9;
+    background-size: 120%;
+    animation: color-change 40s ease-in-out infinite;
 }
 .submitButton {
     position: relative;
@@ -98,7 +106,7 @@ header {
     border-width: 2px;
     border-color: whitesmoke;
     border-radius: 50px;
-    background: linear-gradient(45deg, #542d74 33%, #0D61BC 66%, #8AA9D6);
+    background: linear-gradient(45deg,  #864cb5 33%, #0D61BC 66%, #8AA9D6);
     background-size: 400%;
     font-size: 20px;
     color: white;
@@ -137,9 +145,33 @@ header {
         background-position: 0px 50%;
     }
 }
+@keyframes background-change {
+    0% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 80% 50%;
+    }
+    100% {
+        background-position: 20% 50%;
+    }
+}
+@keyframes background-change2 {
+    0% {
+        background-position: 30% 50%;
+    }
+    50% {
+        background-position: 70% 50%;
+    }
+    100% {
+        background-position: 30% 50%;
+    }
+}
 .infoBlock {
     margin: 0%;
     background-color:lightcoral;
+    background-color:rgb(105, 91, 193);
+    background-color:#9363ba;
     width: 100%;
     /* min-height: 50vh; */
 }
@@ -152,6 +184,7 @@ header {
 .practiceBlock {
     margin: 0%;
     background-color:coral;
+    background-color:#3175be;
     width: 100%;
     /* min-height: 50vh; */
     text-align: right;
@@ -175,6 +208,7 @@ header {
 }
 .jobsBlock {
     background-color: aquamarine;
+    background-color: #8AA9D6;
     width: 100%;
     /* min-height: 50vh; */
 }
@@ -207,32 +241,71 @@ div section li::after, div section li::before {
 .cardRev-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .cardRev {
-    min-width: 200px;
-    max-width: 300px;
+    margin: 2% 0% 2% 0%;
+    width: 350px;
     border-style: solid;
+    border-top: none;
+    border-bottom: none;
     border-width: 1px;
-    border-radius: 20px;
+    text-align: center;
+    /* border-radius: 20px; */
 }
 .cardRev-img {
-    max-width: inherit;
-    width: 100%;
+    width: 250px;
     height: 200px;
+    
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 .cardRev-body {
     text-align: center;
 }
+.map {
+    margin: 0%;
+    background-color:rgb(140, 194, 180);
+    width: 100%;
+    text-align: left;
+}
+.mapText {
+    padding: 2% 8% 2% 8%;
+}
+.map-api {
+    padding: 2% 0% 2% 0%;
+    text-align: center; 
+}
+.map-api iframe {
+    border-radius: 15px;
+    width: 800px;
+}
 footer {
+    margin: 0%;
+    padding: 2% 0% 2% 0%;
     background-color:darkgray;
+    text-align: center;
+}
+.phone {
+    margin-right: 2%;
+    display: inline-block;
+}
+.mail {
+    display: inline-block;
 }
 @media screen and (max-width: 992px) {
     .submitBlock {
         font-size: 1.3em;
+        background-size: cover;
+        animation: background-change 70s ease-in-out infinite;
+    }
+    .map-api iframe {
+        height: 350px;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 839px) {
+    .cardRev {
+        width: 300px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -242,6 +315,7 @@ footer {
     }
     .submitBlock {
         font-size: 1em;
+        animation: background-change2 70s ease-in-out infinite;
     }
     div section ul {
         columns: 1;
@@ -256,10 +330,24 @@ footer {
     .cardRev {
         max-width: 250px;
     }
+    .map-api iframe {
+        height: 250px;
+        width: 350px;
+    }
 }
 @media screen and (max-width: 424px) {
     .menu-main a {
         margin: 0px 10px 0px 6px;
         font-size: 12px;
+    }
+    .map-api iframe {
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (orientation:landscape)  and (max-width: 668px) {
+    .navbar-logo {
+        width: 50px;
+        height: 60px;
     }
 }

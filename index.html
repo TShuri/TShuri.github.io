@@ -11,21 +11,24 @@
 
 <body>
     <header>
+        <div class="menu-contain">
         <nav class="menu">
-            <a class="navbar-logo" href=""><img src="https://www.istu.edu/upload/iblock/c17/ipolytech.svg" width="40" height="50"></a>
+            <a class="navbar-logo" href="https://www.istu.edu/"><img src="https://www.istu.edu/upload/iblock/c17/ipolytech.svg" width="40" height="50"></a>
             <ul class="menu-main">
-                <li><a href="">Инфо</a></li>
-                <li><a href="">Отзывы</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#hr-info">Инфо</a></li>
+                <li><a href="#hr-reviews">Отзывы</a></li>
+                <li><a href="#hr-map">Контакты</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
         <div class="submitBlock">  
             <h1>Информационные системы и технологии в административном управлении</h1>
-            <button class="submitButton">Поступить</button>
+            <button onclick="window.location.href = 'https://www.istu.edu/abit/'" class="submitButton">Поступить</button>
         </div>
         <div class="infoBlock">
+            <a name="hr-info"></a>
             <div class="infoText">
             <section>
                 <h2>Сведения об образовательной программе</h2>
@@ -110,41 +113,75 @@
         </div>
         <div class="reviewsBlock">
         <section>
+            <a name="hr-reviews"></a>
             <div class="reviewsText">
                 <h2>Отзывы</h2>
                 <div class="cardRev-container">
                     <div class="cardRev">
-                        <img src="http://earth.spbu.ru/netcat_files/userfiles/news/june2014/suslovets.jpg" class="cardRev-img" alt="img">
+                        <img src="https://dentbery.ru/wp-content/uploads/2019/07/happy_people-3.jpg" class="cardRev-img" alt="img">
                         <div class="cardRev-body">
-                            <h5>Имя Фамилия</h5>
-                            <p class="cardRev-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>Кира (Web-аналитик)</h5>
+                            <p class="cardRev-text"> Достаточно легко поступить в этот Университет на бюджет, так как там много бесплатных мест. НИ ИрГТУ считается востребованным учреждением не только в нашем городе, но и по всему миру, так как он является национальным университетом!</p>
                         </div>
                     </div>
                     <div class="cardRev">
-                        <img src="http://earth.spbu.ru/netcat_files/userfiles/news/june2014/suslovets.jpg" class="cardRev-img" alt="img">
+                        <img src="https://mtdata.ru/u3/photoD852/20501229401-0/original.jpg" class="cardRev-img" alt="img">
                         <div class="cardRev-body">
-                            <h5>Имя Фамилия</h5>
-                            <p class="cardRev-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>Вадим (Python-разработчик)</h5>
+                            <p class="cardRev-text">ИрГТУ мой любимый универ, который я закончила в 2009г. Мой родной политех дал мне просто прекрасное образование, которое позволяет мне сегодня с легкостью решать сложные технические проекты</p>
                         </div>
                     </div>
                     <div class="cardRev">
-                        <img src="http://earth.spbu.ru/netcat_files/userfiles/news/june2014/suslovets.jpg" class="cardRev-img" alt="img">
+                        <img src="https://www.voubs.com/original/photo/fe7/Retouch-Photo+-+Girl_d874154a25a1879265c06fba15302073.jpg" class="cardRev-img" alt="img">
                         <div class="cardRev-body">
-                            <h5>Имя Фамилия</h5>
-                            <p class="cardRev-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>Елизавета (UI-специалист)</h5>
+                            <p class="cardRev-text">Единственный научно-исследовательский университет за Уралом. Лучшие традиции обучения, отзывчивые преподаватели и отличные наставники. Всё это подтверждается аккредитованностью организации на высокие баллы.
+                                Хорошее место для науки, творчества и обучения. Множество направлений и специальностей, международные стажировки, открытые лаборатории и свой собственный технопарк</p>
+                        </div>
+                    </div>
+                    <div class="cardRev">
+                        <img src="https://c.pxhere.com/photos/4a/66/photo-134689.jpg!d" class="cardRev-img" alt="img">
+                        <div class="cardRev-body">
+                            <h5>Анатолий (iOS-разработчик)</h5>
+                            <p class="cardRev-text">Есть все необходимое для всестороннего развития, остальное зависит от самого учащегося. При желании и небольшом усердии можно и по программам обмена заграницу ездить, и практики оплачиваемые на ведущих предприятиях проходить, и стипендии выше средних зарплат получать, и в культурно-массовых мероприятиях участвовать. Все в ваших руках</p>
+                        </div>
+                    </div>
+                    <div class="cardRev">
+                        <img src="https://c.pxhere.com/photos/7f/af/photo-13412.jpg!d" class="cardRev-img" alt="img">
+                        <div class="cardRev-body">
+                            <h5>Георгий (Менеджер IT-проектов)</h5>
+                            <p class="cardRev-text">Мне понравился этот вуз,потому-что он самый лучший вуз из всех вузов Иркутской области. Качество образования здесь на высшем уровне и готовят здесь настоящих специалистов.Учиться сложно,но зато учат на совесть</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         </div>
+        <div class="map">
+            <a name="hr-map"></a>
+            <div class="mapText">
+                <h2>Где мы находимся</h2>
+                <div class="map-api">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11123.37669120207!2d104.26825411580297!3d52.26277261807849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da82377ce848fa7%3A0x48f3b2cc30369dc5!2z0JjRgNCd0JjQotCj!5e0!3m2!1sru!2sru!4v1666463846410!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <hr>
         <adress>
             <p>Приемная коммисия ИРНИТУ</p>
+            <div class="phone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
             <a class="a_footer" href="tel:83952405405">8(3952)405-405</a>
+            </div>
+            <div class="mail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>
             <a class="a_footer" href="mailto:cpk@istu.edu">cpk@istu.edu</a>
+            </div>
         </adress>
     </footer>
 </body>
